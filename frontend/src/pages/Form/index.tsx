@@ -1,6 +1,7 @@
 import { count } from "console";
 import { title } from "process";
 import "./styles.css";
+import {Link} from 'react-router-dom';
 
 function Form() {
   const movies = {
@@ -38,12 +39,14 @@ function Form() {
             </select>
           </div>
           <div className="movies-form-btn-container">
-            <button className="btn movies-btn" type="submit">
+            <button className="movies-btn" type="submit">
               SALVAR
             </button>
           </div>
         </form>
-        <button className=" btn movies-btn mt-3">CANCELAR</button>
+        <Link to="/">
+         <button className="movies-btn mt-3">CANCELAR</button>
+        </Link>
       </div>
     </div>
   );
